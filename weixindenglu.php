@@ -5,7 +5,7 @@ ini_set('max_execution_time','50000');
 header("Content-Type:text/html;charset=utf8");
 $solrUser= new SolrUtil('http://127.0.0.1:8983/solr/', 'users');
 $wxlogin = new WX_Remote_Opera();
-$wxlogin->init('1293875937@qq.com','skyflying2');
+$wxlogin->init('username','password');//--------------输入账号密码
 $flag=$_GET['flag'];
 $id=$_GET['id'];
 $createTime=$_GET['createTime'];
